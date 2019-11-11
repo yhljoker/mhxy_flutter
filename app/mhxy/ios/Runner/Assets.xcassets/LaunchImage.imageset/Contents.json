@@ -1,23 +1,88 @@
 {
-  "images" : [
-    {
-      "idiom" : "universal",
-      "filename" : "LaunchImage.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "LaunchImage@2x.png",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "LaunchImage@3x.png",
-      "scale" : "3x"
+    "images": [
+        {
+            "extent": "full-screen",
+            "idiom": "iphone",
+            "subtype": "2688h",
+            "filename": "Default-Landscape-2688h.png",
+            "minimum-system-version": "12.0",
+            "orientation": "landscape",
+            "scale": "3x"
+        },
+        {
+            "extent": "full-screen",
+            "idiom": "iphone",
+            "subtype": "1792h",
+            "filename": "Default-Landscape-1792h.png",
+            "minimum-system-version": "12.0",
+            "orientation": "landscape",
+            "scale": "2x"
+        },
+        {
+            "extent": "full-screen",
+            "idiom": "iphone",
+            "subtype": "2436h",
+            "filename": "Default-Landscape-2436h.png",
+            "minimum-system-version": "11.0",
+            "orientation": "landscape",
+            "scale": "3x"
+        },
+        {
+            "extent": "full-screen",
+            "idiom": "iphone",
+            "subtype": "736h",
+            "filename": "Default-Landscape-736h.png",
+            "minimum-system-version": "8.0",
+            "orientation": "landscape",
+            "scale": "3x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape~ipad.png",
+            "extent": "full-screen",
+            "minimum-system-version": "7.0",
+            "scale": "1x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape@2x~ipad.png",
+            "extent": "full-screen",
+            "minimum-system-version": "7.0",
+            "scale": "2x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape-No-StatusBar~ipad.png",
+            "extent": "to-status-bar",
+            "scale": "1x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape~ipad.png",
+            "extent": "full-screen",
+            "scale": "1x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape-No-StatusBar@2x~ipad.png",
+            "extent": "to-status-bar",
+            "scale": "2x"
+        },
+        {
+            "orientation": "landscape",
+            "idiom": "ipad",
+            "filename": "Default-Landscape@2x~ipad.png",
+            "extent": "full-screen",
+            "scale": "2x"
+        }
+    ],
+    "info": {
+        "version": 1,
+        "author": "https://icon.wuruihong.com"
     }
-  ],
-  "info" : {
-    "version" : 1,
-    "author" : "xcode"
-  }
 }
