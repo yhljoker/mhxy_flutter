@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mhxy/common/screenutil/screenUtil.dart';
+import 'package:mhxy/routes/JKRouteBuilder.dart';
 
 import '../icons.dart';
 
@@ -17,6 +18,25 @@ class LoginServerWidget extends StatelessWidget {
         child: ImageBtnWidget(
           onTap: () {
             print('选服务器');
+            JKRouteBuilder.pushTransparentPage(
+              context,
+              Center(
+                child: GestureDetector(
+                  onTap: () {
+                    print('back');
+                    Navigator.of(context).pop();
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(12.0),
+                    color: Colors.black,
+                    child: Text(
+                      'data3',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+            );
           },
           child: Container(
             child: Stack(
@@ -32,7 +52,8 @@ class LoginServerWidget extends StatelessWidget {
                   top: JKScreenUtil.setWidth(10),
                   child: Text(
                     '时空之隙',
-                    style: TextStyle(fontSize: JKScreenUtil.setSp(10), color: Colors.white),
+                    style: TextStyle(
+                        fontSize: JKScreenUtil.setSp(10), color: Colors.white),
                   ),
                 ),
               ],

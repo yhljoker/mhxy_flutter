@@ -68,9 +68,25 @@ class JKIcons {
     return baseImage(left: -715, top: -1600, width: 65, height: 65);
   }
 
+  /// 登录页-左下角 协议背景
+  static Widget agreementBG() {
+    return baseImage(left: -1189, top: -1875, width: 39, height: 39);
+  }
+
+  /// 登录页-左下角 协议勾勾
+  static Widget agreement() {
+    return baseImage(left: -1265, top: -1670, width: 35, height: 35);
+  }
+
   /// 登录页-服务器选择背景
   static Widget chooseServeBG() {
     return baseImage(
         left: -782, top: -1218, width: 195, height: 55, path: iconPath2);
+  }
+
+  /// 登录页-服务器选择背景
+  static Widget loginBtnBG() {
+    return baseImage(
+        left: -1050, top: -591, width: 240, height: 80, path: iconPath2);
   }
 }
