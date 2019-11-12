@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'BaseZeroHeightAppBarPage.dart';
 
 import '../common/audio/AudioManager.dart';
+import '../common/screenutil/screenUtil.dart';
 
 import '../widgets/LoginVideoWidget.dart';
 import '../widgets/LoginWidget.dart';
@@ -36,6 +37,10 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+
+    JKScreenUtil.init(context);
+
+
     // TODO: implement build
     return BaseZeroHeightAppBarPage(
       child: _isPlayVideo

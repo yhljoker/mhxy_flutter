@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'login/LoginBGWidget.dart';
 import 'login/LoginLogoWidget.dart';
-
 import 'login/LoginCopyrightWidget.dart';
+import 'login/LoginRightTopBtnsWidget.dart';
+import 'login/LoginServerWidget.dart';
 
 class LoginWidget extends StatefulWidget {
   @override
@@ -18,8 +19,8 @@ class _LoginWidgetState extends State<LoginWidget> {
       children: <Widget>[
         LoginBGWidget(),
         LoginLogoWidget(),
-
-
+        LoginRightTopBtnsWidget(),
+        LoginServerWidget(),
         LoginCopyrightWidget(),
       ],
     );

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+
+
 import 'dart:io';
 
 import 'common/audio/AudioManager.dart';
@@ -58,6 +60,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: buildAppRoutes(context),
     );
   }
