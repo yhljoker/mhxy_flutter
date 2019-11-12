@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   audioplayers: ^0.13.2 #音频播放
   video_player: ^0.10.2+5 #视频播放
+  flutter_screenutil: ^0.5.3 #屏幕适配
+  flutter_sequence_animation: ^3.0.1 #组件级动画
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +47,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/global/start_bg.jpg
+    - assets/images/global/xb1.png
+    - assets/images/global/xb2.png
     - assets/images/login_bg.jpg
     - assets/images/login_logo.png
 
