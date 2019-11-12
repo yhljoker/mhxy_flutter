@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mhxy/routes/JKRouteBuilder.dart';
 import 'package:mhxy/widgets/icons.dart';
+
+import 'LoginAgreementDialogWidget.dart';
 
 class LoginAgreementWidget extends StatefulWidget {
   Function onChange;
@@ -13,12 +16,16 @@ class LoginAgreementWidget extends StatefulWidget {
 class _LoginAgreementWidgetState extends State<LoginAgreementWidget> {
   bool isAgree = false;
 
+  _openAgreement() {
+    JKRouteBuilder.pushTransparentPage(context, LoginAgreementDialogWidget());
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Positioned(
       left: 0,
-      bottom: 40,
+      bottom: 26,
       child: Row(
         children: <Widget>[
           GestureDetector(
@@ -59,9 +66,12 @@ class _LoginAgreementWidgetState extends State<LoginAgreementWidget> {
             onTap: () {
               print('打开协议');
             },
-            child: Text(
-              '网易游戏使用许可及服务协议',
-              style: TextStyle(color: Color(0xFF53dfff), fontSize: 12),
+            child: GestureDetector(
+              onTap: _openAgreement,
+              child: Text(
+                '网易游戏使用许可及服务协议',
+                style: TextStyle(color: Color(0xFF53dfff), fontSize: 12),
+              ),
             ),
           )
         ],

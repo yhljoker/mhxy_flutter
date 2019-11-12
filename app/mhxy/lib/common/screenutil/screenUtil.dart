@@ -11,6 +11,10 @@ class JKScreenUtil {
     return ScreenUtil.getInstance().setWidth(width);
   }
 
+  static setHeight(double height) {
+    return ScreenUtil.getInstance().setHeight(height);
+  }
+
   static setSp(double sp) {
     return ScreenUtil.getInstance().setSp(sp);
   }

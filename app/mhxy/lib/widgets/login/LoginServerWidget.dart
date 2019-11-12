@@ -7,6 +7,10 @@ import '../icons.dart';
 import '../ImageBtnWidget.dart';
 
 class LoginServerWidget extends StatelessWidget {
+  Function login;
+
+  LoginServerWidget({Key key, this.login}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -17,26 +21,26 @@ class LoginServerWidget extends StatelessWidget {
       child: Center(
         child: ImageBtnWidget(
           onTap: () {
-            print('选服务器');
-            JKRouteBuilder.pushTransparentPage(
-              context,
-              Center(
-                child: GestureDetector(
-                  onTap: () {
-                    print('back');
-                    Navigator.of(context).pop();
-                  },
-                  child: Container(
-                    padding: EdgeInsets.all(12.0),
-                    color: Colors.black,
-                    child: Text(
-                      'data3',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ),
-            );
+            if (login != null) login();
+//            JKRouteBuilder.pushTransparentPage(
+//              context,
+//              Center(
+//                child: GestureDetector(
+//                  onTap: () {
+//                    print('back');
+//                    Navigator.of(context).pop();
+//                  },
+//                  child: Container(
+//                    padding: EdgeInsets.all(12.0),
+//                    color: Colors.black,
+//                    child: Text(
+//                      'data3',
+//                      style: TextStyle(color: Colors.white),
+//                    ),
+//                  ),
+//                ),
+//              ),
+//            );
           },
           child: Container(
             child: Stack(

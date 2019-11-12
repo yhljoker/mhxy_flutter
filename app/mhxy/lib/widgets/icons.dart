@@ -4,6 +4,7 @@ import 'package:mhxy/common/screenutil/screenUtil.dart';
 class JKIcons {
   static const iconPath = "assets/images/global/xb1.png";
   static const iconPath2 = "assets/images/global/xb2.png";
+  static const iconPath4 = "assets/images/global/xb4.png";
 
   static Widget baseImage(
       {double width = 0.0,
@@ -88,5 +89,13 @@ class JKIcons {
   static Widget loginBtnBG() {
     return baseImage(
         left: -1050, top: -591, width: 240, height: 80, path: iconPath2);
+  }
+
+
+
+  /// 登录页-用户协议背景
+  static Widget agreeBG() {
+    return baseImage(
+        left: -1025, top: -200, width: 943, height: 80, path: iconPath4);
   }
 }

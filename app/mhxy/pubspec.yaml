@@ -27,6 +27,7 @@ dependencies:
   video_player: ^0.10.2+5 #视频播放
   flutter_screenutil: ^0.5.3 #屏幕适配
   flutter_sequence_animation: ^3.0.1 #组件级动画
+  flutter_styled_toast: ^1.2.0 #toast 提示
 
 dev_dependencies:
   flutter_test:
@@ -49,9 +50,12 @@ flutter:
     - assets/images/global/start_bg.jpg
     - assets/images/global/xb1.png
     - assets/images/global/xb2.png
+    - assets/images/global/xb4.png
     - assets/images/login_bg.jpg
     - assets/images/login_logo.png
     - assets/images/btn_bg.png
+    - assets/images/agree_topright_dl.png
+    - assets/images/agree_bg.jpg
 
 
 

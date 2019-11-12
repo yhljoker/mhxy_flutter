@@ -6,9 +6,9 @@ import '../ImageBtnWidget.dart';
 import '../compoments/BtnWidget.dart';
 
 class LoginBtnWidget extends StatefulWidget {
-  bool agreement;
+  Function login;
 
-  LoginBtnWidget({Key key, this.agreement}) : super(key: key);
+  LoginBtnWidget({Key key, this.login}) : super(key: key);
 
   @override
   _LoginBtnWidgetState createState() => _LoginBtnWidgetState();
@@ -25,7 +25,7 @@ class _LoginBtnWidgetState extends State<LoginBtnWidget> {
       child: Center(
         child: ImageBtnWidget(
           onTap: () {
-            print('登录游戏 ${widget.agreement}');
+            if (widget.login != null) widget.login();
           },
           child: BtnWidget(
             width: 236,

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mhxy/common/toast/JKToast.dart';
+import 'package:mhxy/common/toast/toastMsg.dart';
 
 import 'login/LoginBGWidget.dart';
 import 'login/LoginLogoWidget.dart';
@@ -18,9 +20,24 @@ class _LoginWidgetState extends State<LoginWidget> {
   bool agreement = false;
 
   agreementOnChange(agree) {
-    setState(() {
-      agreement = agree;
-    });
+    agreement = agree;
+  }
+
+  _onLogin() {
+    if (!agreement) {
+      JKToast.toast(context, ToastMsg.agreeAgreement);
+      return;
+    }
+    print('_onLogin');
+  }
+
+  _onServerTap() {
+    if (!agreement) {
+      JKToast.toast(context, ToastMsg.agreeAgreement);
+      return;
+    }
+
+    print('_onServerTap');
   }
 
   @override
@@ -31,13 +48,15 @@ class _LoginWidgetState extends State<LoginWidget> {
         LoginBGWidget(),
         LoginLogoWidget(),
         LoginRightTopBtnsWidget(),
-        LoginServerWidget(),
+        LoginServerWidget(login: _onServerTap),
         LoginVersionWidget(),
         LoginAgreementWidget(
           onChange: agreementOnChange,
         ),
         LoginCopyrightWidget(),
-        LoginBtnWidget(agreement:agreement),
+        LoginBtnWidget(
+          login: _onLogin,
+        ),
       ],
     );
   }
